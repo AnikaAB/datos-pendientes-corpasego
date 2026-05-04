@@ -952,7 +952,7 @@
 
 <script>
 // ─────────────────────────────────────────────
-const APPS_SCRIPT_URL = 'TU_URL_DE_APPS_SCRIPT_AQUI';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxPvNh13ZTnBbvtXOjLuOWzTozZUVx1_vUd48meiVao_XtppSEL3rjhbitxSfoGBVQbpQ/exec';
 // ─────────────────────────────────────────────
 
 // Leer cédula desde parámetro URL (?cedula=0912345678)
@@ -1341,7 +1341,7 @@ async function submitForm() {
     timestamp:            new Date().toISOString(),
   };
 
-  if (APPS_SCRIPT_URL !== 'TU_URL_DE_APPS_SCRIPT_AQUI') {
+  if (APPS_SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbxPvNh13ZTnBbvtXOjLuOWzTozZUVx1_vUd48meiVao_XtppSEL3rjhbitxSfoGBVQbpQ/exec') {
     try {
       const body = new URLSearchParams();
       body.append('data', JSON.stringify(payload));
